@@ -1,4 +1,4 @@
-# 🛡️ Anomaly Detection in Surveillance Videos
+# Anomaly Detection in Surveillance Videos
 
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/Frontend-React-61DAFB.svg?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
@@ -9,7 +9,7 @@ A professional end-to-end web application designed to identify unusual or anomal
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - **🚀 Real-time Processing**: Fast analysis of surveillance footage using optimized ML pipelines.
 - **📁 Smart Video Upload**: Support for MP4, AVI, and MOV formats with automatic processing.
@@ -103,6 +103,36 @@ Anomoly-detection-/
 ├── requirements.txt    # Python dependencies
 └── package.json        # Node.js dependencies
 ```
+
+---
+
+## 🔍 How It Works
+
+This system leverages **Unsupervised Deep Learning** to ensure security without human bias.
+
+### **1. Data Processing Pipeline**
+When a video is uploaded or a camera feed is connected:
+- **Preprocessing**: The system uses **OpenCV** to extract frames at a specific rate.
+- **Normalization**: Frames are resized to 224x224 and normalized to ensure consistent lighting/contrast for the AI.
+
+### **2. The AI Mechanism (Autoencoder)**
+Traditional CCTV AI looks for specific objects (like guns). This system is smarter—it looks for **unusual behavior**:
+- **Normality Learning**: During training, the model only watches "safe" footage. It creates a mathematical blueprint of what normal walking and standing looks like.
+- **Reconstruction Analysis**: During monitoring, the AI tries to "re-draw" the current frame. 
+    - If it can re-draw it easily, the activity is **Normal**.
+    - If it fails (High Reconstruction Error), it means the AI is seeing something it wasn't trained for—an **Anomaly**.
+
+### **3. Scoring & Thresholding**
+- The system generates an **Anomaly Score (0.0 to 1.0)** for every second of footage.
+- If the score crosses **0.8**, the system triggers a **Visual Alert** on the dashboard, flagging the timestamp for security review.
+
+---
+
+## 🏗️ System Architecture
+
+1. **Frontend (React)**: High-performance UI that renders the video player and a real-time synchronized line chart.
+2. **Backend (FastAPI)**: A high-concurrency Python server that handles file uploads and manages the ML pipeline.
+3. **ML Layer (PyTorch)**: The "Inference Engine" that loads the trained `.pth` weights and performs GPU/CPU accelerated computations.
 
 ---
 
