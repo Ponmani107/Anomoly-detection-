@@ -1,26 +1,21 @@
 # Anomaly Detection in Surveillance Videos
 
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/Frontend-React-61DAFB.svg?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
-[![PyTorch](https://img.shields.io/badge/ML-PyTorch-EE4C2C.svg?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 A professional end-to-end web application designed to identify unusual or anomalous activities in CCTV/surveillance footage. Utilizes Deep Learning (Unsupervised Autoencoders) to detect deviations from normal patterns in real-time or uploaded video files.
 
 ---
 
-##  Key Features
+## Key Features
 
-- **🚀 Real-time Processing**: Fast analysis of surveillance footage using optimized ML pipelines.
-- **📁 Smart Video Upload**: Support for MP4, AVI, and MOV formats with automatic processing.
-- **🧠 Deep Learning Engine**: Powered by an Unsupervised Autoencoder model trained on normal activity patterns.
-- **📊 Interactive Dashboard**: High-fidelity visualization of anomaly scores across the video timeline.
-- **🔔 Intelligent Alerts**: Visual indicators and logs for detected unusual activities.
-- **🎥 Live Feed Simulation**: Monitor multiple camera feeds simultaneously via a sleek dashboard interface.
+- **Real-time Processing**: Fast analysis of surveillance footage using optimized ML pipelines.
+- **Smart Video Upload**: Support for MP4, AVI, and MOV formats with automatic processing.
+- **Deep Learning Engine**: Powered by an Unsupervised Autoencoder model trained on normal activity patterns.
+- **Interactive Dashboard**: High-fidelity visualization of anomaly scores across the video timeline.
+- **Intelligent Alerts**: Visual indicators and logs for detected unusual activities.
+- **Live Feed Simulation**: Monitor multiple camera feeds simultaneously via a sleek dashboard interface.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### **Frontend**
 - **Framework**: [React 19](https://reactjs.org/) + [Vite](https://vitejs.dev/)
@@ -40,7 +35,7 @@ A professional end-to-end web application designed to identify unusual or anomal
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### **Prerequisites**
 - Python 3.10+
@@ -71,7 +66,7 @@ npm install
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 To run the full application, open two separate terminals:
 
@@ -91,7 +86,7 @@ npm run dev
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Anomoly-detection-/
@@ -106,7 +101,7 @@ Anomoly-detection-/
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 This system leverages **Unsupervised Deep Learning** to ensure security without human bias.
 
@@ -128,7 +123,7 @@ Traditional CCTV AI looks for specific objects (like guns). This system is smart
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 1. **Frontend (React)**: High-performance UI that renders the video player and a real-time synchronized line chart.
 2. **Backend (FastAPI)**: A high-concurrency Python server that handles file uploads and manages the ML pipeline.
@@ -136,7 +131,7 @@ Traditional CCTV AI looks for specific objects (like guns). This system is smart
 
 ---
 
-## 🧠 Model Information
+## Model Information
 
 The core detection engine uses an **Unsupervised Autoencoder**. 
 - **Training**: The model is trained on "normal" surveillance footage to learn standard movement patterns.
@@ -144,9 +139,9 @@ The core detection engine uses an **Unsupervised Autoencoder**.
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-**Developed with ❤️ for Advanced Surveillance Analytics.**
+**Developed for Advanced Surveillance Analytics.**
