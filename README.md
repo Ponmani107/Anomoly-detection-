@@ -138,10 +138,3 @@ The core detection engine uses an **Unsupervised Autoencoder**.
 - **Inference**: During testing, the model attempts to reconstruct input frames. A high reconstruction error (MSE) indicates an **anomaly** (something the model hasn't seen before, like a fight, sudden running, or restricted area crossing).
 
 ---
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-**Developed for Advanced Surveillance Analytics.**
